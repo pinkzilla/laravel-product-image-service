@@ -1,0 +1,32 @@
+{
+    "name": "portfolio/product-image-service",
+    "description": "Sample: a Laravel service that stores product photos safely (resize, auto-rotate, fallbacks) and never deletes a file another product still uses.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "illuminate/database": "^12.0",
+        "illuminate/http": "^12.0",
+        "illuminate/support": "^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Portfolio\\ProductImages\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Portfolio\\ProductImages\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
